@@ -4,15 +4,39 @@ body {
 
 #name {
     font-weight: bold;
-    /*font-size: 5vw;*/
-    font-size: 5em;
+    font-size: 5rem;
 }
 
-#description {
-    font-size: 3em;
+.description {
+    font-size: 3rem;
+}
+
+.content {
+    max-width: 50rem;
+    margin: auto;
+    /*background-color: bisque;*/
+}
+
+.content > div {
+    margin-bottom: 1rem;
+    /*background-color: aquamarine;*/
 }
 
 .button {
-    font-size: 1.5em;
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.5rem 1rem 0.5rem 3rem;
     text-decoration: none;
+    background-color: #dedede;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    background-image: url('resources/email.gif');
+    background-repeat: no-repeat;
+    background-size: 25%;
 }
+
+.button:active {
+    background-color: #676767;
+    color: #e4e4e4;
+}
+
