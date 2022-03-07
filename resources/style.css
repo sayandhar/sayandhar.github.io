@@ -1,42 +1,71 @@
 body {
     font-family: 'Azeret Mono', monospace;
-}
-
-#name {
-    font-weight: bold;
-    font-size: 5rem;
-}
-
-.description {
-    font-size: 3rem;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .content {
-    max-width: 50rem;
+    width: 50rem;
     margin: auto;
     /*background-color: bisque;*/
 }
 
 .content > div {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     /*background-color: aquamarine;*/
 }
 
-.button {
-    font-size: 1.1rem;
+#name {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+#description {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+
+.outlink {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outlink a {
+    font-size: 1.2rem;
     color: black;
-    padding: 0.5rem 1rem 0.5rem 3rem;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
     text-decoration: none;
     background-color: #dedede;
-    border: 2px solid black;
-    border-radius: 0.2em;
-    background-image: url('resources/email.gif');
+    border: 3px solid black;
+    border-radius: 0.3rem;
     background-repeat: no-repeat;
+    background-position: 0.3rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.outlink a:active {
+    background-color: #676767;
+    color: #e6e6e6;
+}
+
+#resume {
+    background-image: url('pdf.svg');
     background-size: 25%;
 }
 
-.button:active {
-    background-color: #676767;
-    color: #e4e4e4;
+#email {
+    background-image: url('email.svg');
+    background-size: 17%;
+}
+
+#linkedin {
+    background-image: url('linkedin.svg');
+    background-size: 20%;
 }
 
