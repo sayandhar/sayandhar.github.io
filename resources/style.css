@@ -12,18 +12,19 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
+    background-image: url('background.webp');
 }
 
 .content {
     width: 50rem;
     margin: auto;
     padding: 0.5rem;
-    /*background-color: bisque;*/
+    /*background-color: blue;*/
 }
 
 .content > div {
     margin-bottom: 2rem;
-    /*background-color: aquamarine;*/
+    /*background-color: red;*/
 }
 
 #name {
@@ -47,13 +48,12 @@ body {
     background-color: #ddd;
     font-size: 1.1rem;
     font-weight: 400;
-    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     text-decoration: none;
     border: 0.14rem solid black;
     border-radius: 0.3rem;
     background-repeat: no-repeat;
-    margin-right: 0.6rem;
-    margin-top: 0.5rem;
+    margin: 0.6rem 0.6rem 0 0;
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     box-shadow: inset 0.1rem 0.1rem 0.17rem white, inset -0.1rem -0.1rem 0.15rem #444;
 }
 
