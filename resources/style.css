@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Azeret Mono';
+    src: url('azeret-mono-variable.ttf') format('truetype');
+    font-weight: 1 999;
+}
+
 body {
     font-family: 'Azeret Mono', monospace;
     display: flex;
@@ -11,6 +17,7 @@ body {
 .content {
     width: 50rem;
     margin: auto;
+    padding: 0.5rem;
     /*background-color: bisque;*/
 }
 
@@ -20,7 +27,7 @@ body {
 }
 
 #name {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 5rem;
     line-height: 5rem;
 }
@@ -36,36 +43,43 @@ body {
 }
 
 .outlink a {
-    font-size: 1.2rem;
     color: black;
-    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    background-color: #ddd;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     text-decoration: none;
-    background-color: #dedede;
-    border: 3px solid black;
+    border: 0.14rem solid black;
     border-radius: 0.3rem;
     background-repeat: no-repeat;
-    background-position: 0.3rem;
-    margin-right: 0.5rem;
+    margin-right: 0.6rem;
     margin-top: 0.5rem;
+    box-shadow: inset 0.1rem 0.1rem 0.17rem white, inset -0.1rem -0.1rem 0.15rem #444;
 }
 
 .outlink a:active {
     background-color: #676767;
     color: #e6e6e6;
+    box-shadow: inset 0.1rem 0.1rem 0.17rem black, inset -0.1rem -0.1rem 0.15rem white;
 }
 
 #resume {
-    background-image: url('pdf.svg');
+    background-image: url('resume.svg');
     background-size: 25%;
+    background-position: 0.3rem 0.2rem;
+    padding-left: 2.7rem;
 }
 
 #email {
     background-image: url('email.svg');
-    background-size: 17%;
+    background-size: 18%;
+    background-position: 0.5rem 0.3rem;
+    padding-left: 3rem;
 }
 
 #linkedin {
     background-image: url('linkedin.svg');
-    background-size: 20%;
+    background-size: 19%;
+    background-position: 0.5rem 0.3rem;
+    padding-left: 2.9rem;
 }
-
